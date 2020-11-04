@@ -25,6 +25,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #fff;
   box-shadow: 0 0 6px 3px var(--shadowHeader);
   padding: 10px 30px;
   position: fixed;
@@ -87,4 +88,55 @@ body {
 
 .profile__container:hover .profile__logo {
   box-shadow: 0 0 5px 5px #ccc;
+}
+
+
+.main {
+  margin-top: 150px;
+}
+
+.options {
+  width: 100%;
+  height: 60px;
+  margin-top: 60px;
+  background-color: #FD6766;
+  box-shadow: 0 0 2px 2px #FD6766;
+  padding: 10px 0;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.options div {
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.options div i{
+  font-size: 18px;
+  margin-bottom: 6px;
+  transition: var(--transition);
+}
+
+.options p {
+  margin: 0;
+  font-size: .8rem;
+}
+
+.options__top {
+  display: flex;
+  text-align: center;
+}
+
+.option__bottom {
+  text-align: center;
+}
+
+.options__top div:hover  i,
+.option__bottom div:hover i{
+  transform: scale(1.2);
 }
