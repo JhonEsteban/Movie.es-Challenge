@@ -1,222 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie.es-Challenge</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Movie.es-Challenge</title>
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-  <!-- Custom Css -->
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-
-<body>
-
-  <header class="header">
-
-    <div class="logo__container">
-      <img src="./images/popcorn.png" class="popcorn" width="20">
-      <span class="logo">Movie.es</span>
-    </div>
-
-    <div class="profile__container">
-      <div class="profile__logo"></div>
-      <div class="profile__toggle"></div>
-    </div>
-
-  </header>
+  <body>
 
 
-  <section class="options">
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__layout">
 
-    <div class="options__top">
 
-      <div>
-        <i class="fas fa-home"></i>
-        <p>Home</p>
+          <div class="logo__container">
+            <div class="popcorn"></div>
+            <div class="logo">Movie.es</div>
+          </div>
+
+          <div class="form">
+            <input type="search" class="form__search" 
+            placeholder="Busca tu peli, actor, actriz o director favorito" 
+            />
+          </div>
+
+          <div class="profile">
+            <div class="profile__name">Jhon Esteban</div>
+            <div class="profile__logo"></div>
+            <div class="profile__toggle"></div>
+          </div>
+
+        </div>
       </div>
+    </header>
 
-      <div>
-        <i class="fas fa-fire-alt"></i>
-        <p>Trending</p>
-      </div>
-
-      <div>
-        <i class="fas fa-heart"></i>
-        <p>Likes</p>
-      </div>
-
-    </div>
-
-    <div class="option__bottom">
-      <div>
-        <i class="fas fa-cog"></i>
-        <p>Ajustes</p>
-      </div>
-    </div>
-
-  </section>
-
-
-  <main class="main">
-    <div class="wrapper">
-
-      <h3 class="movie-title">Ahora en el cine</h3>
-
-      <section class="grid-layout">
-
-        <div class="movie-card">
-          <figure class="figure">
-            <img src="./images/image-1.jpg" alt="figure__image" height="180">
-          </figure>
-
-          <div class="movie-card__description">
-            <h4>The secret life of pets</h4>
-            <p>
-              The quiet lfe of a terrier named Max is upended
-              when his owner takes in Duke, a stray whom Max instantly dislikes.
-            </p>
-          </div>
-        </div>
-
-        <div class="movie-card">
-          <figure class="figure">
-            <img src="./images/image-1.jpg" alt="figure__image" height="180">
-          </figure>
-
-          <div class="movie-card__description">
-            <h4>The secret life of pets</h4>
-            <p>
-              The quiet lfe of a terrier named Max is upended
-              when his owner takes in Duke, a stray whom Max instantly dislikes.
-            </p>
-          </div>
-        </div>
-
-        <div class="movie-card">
-          <figure class="figure">
-            <img src="./images/image-1.jpg" alt="figure__image" height="180">
-          </figure>
-
-          <div class="movie-card__description">
-            <h4>The secret life of pets</h4>
-            <p>
-              The quiet lfe of a terrier named Max is upended
-              when his owner takes in Duke, a stray whom Max instantly dislikes.
-            </p>
-          </div>
-        </div>
-
-      </section>
-
-
-
-
-      <h3 class="movie-title">Aclamadas por la crítica</h3>
-
-      <section class="grid-layout">
-
-        <div class="movie-card">
-          <figure class="figure">
-            <img src="./images/image-1.jpg" alt="figure__image" height="180">
-          </figure>
-
-          <div class="movie-card__description">
-            <h4>The secret life of pets</h4>
-            <p>
-              The quiet lfe of a terrier named Max is upended
-              when his owner takes in Duke, a stray whom Max instantly dislikes.
-            </p>
-          </div>
-        </div>
-
-        <div class="movie-card">
-          <figure class="figure">
-            <img src="./images/image-1.jpg" alt="figure__image" height="180">
-          </figure>
-
-          <div class="movie-card__description">
-            <h4>The secret life of pets</h4>
-            <p>
-              The quiet lfe of a terrier named Max is upended
-              when his owner takes in Duke, a stray whom Max instantly dislikes.
-            </p>
-          </div>
-        </div>
-
-        <div class="movie-card">
-          <figure class="figure">
-            <img src="./images/image-1.jpg" alt="figure__image" height="180">
-          </figure>
-
-          <div class="movie-card__description">
-            <h4>The secret life of pets</h4>
-            <p>
-              The quiet lfe of a terrier named Max is upended
-              when his owner takes in Duke, a stray whom Max instantly dislikes.
-            </p>
-          </div>
-        </div>
-
-      </section>
-
-
-
-
-      <h3 class="movie-title">No te debes perder</h3>
-
-      <section class="grid-layout">
-
-        <div class="movie-card">
-          <figure class="figure">
-            <img src="./images/image-1.jpg" alt="figure__image" height="180">
-          </figure>
-
-          <div class="movie-card__description">
-            <h4>The secret life of pets</h4>
-            <p>
-              The quiet lfe of a terrier named Max is upended
-              when his owner takes in Duke, a stray whom Max instantly dislikes.
-            </p>
-          </div>
-        </div>
-
-        <div class="movie-card">
-          <figure class="figure">
-            <img src="./images/image-1.jpg" alt="figure__image" height="180">
-          </figure>
-
-          <div class="movie-card__description">
-            <h4>The secret life of pets</h4>
-            <p>
-              The quiet lfe of a terrier named Max is upended
-              when his owner takes in Duke, a stray whom Max instantly dislikes.
-            </p>
-          </div>
-        </div>
-
-        <div class="movie-card">
-          <figure class="figure">
-            <img src="./images/image-1.jpg" alt="figure__image" height="180">
-          </figure>
-
-          <div class="movie-card__description">
-            <h4>The secret life of pets</h4>
-            <p>
-              The quiet lfe of a terrier named Max is upended
-              when his owner takes in Duke, a stray whom Max instantly dislikes.
-            </p>
-          </div>
-        </div>
-
-      </section>
-
-  </main>
-
-</body>
-
+  </body>
 </html>
