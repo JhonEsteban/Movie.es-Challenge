@@ -1,5 +1,5 @@
-import toggleMenu from './js/toggleMenu.js';
+import toggleMenu from "./js/toggleMenu.js";
 
-const profile = document.getElementById('profile');
+const profile = document.getElementById("profile");
 
-profile.addEventListener( 'click', toggleMenu );
+profile.addEventListener("click", toggleMenu);

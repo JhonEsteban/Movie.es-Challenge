@@ -94,6 +94,12 @@ img {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-bottom: 10px solid var(--dark-color);
+  transition: transform 300ms ease;
+}
+
+.profile__toggle.rotate {
+  transform: rotate(177deg);
+  border-bottom: 10px solid var(--sidebar-color);
 }
 
 .main {
@@ -163,7 +169,6 @@ span.fas {
   cursor: pointer;
 }
 
-
 @media screen and (min-width: 480px) {
   .profile__name {
     display: block;
@@ -186,12 +191,11 @@ span.fas {
 }
 
 @media screen and (min-width: 570px) {
-
   .main__layout {
     grid-template-columns: auto 4fr;
   }
 
-  .profile__toggle  {
+  .profile__toggle {
     display: none;
   }
 
@@ -217,7 +221,6 @@ span.fas {
   .settings__nut {
     margin-right: initial;
   }
-
 }
 
 @media screen and (min-width: 720px) {
