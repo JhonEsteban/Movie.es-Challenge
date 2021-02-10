@@ -3,7 +3,7 @@
 Layout challenge of the CSS Grid Platzi course created by the good Leonidas Esteban
 
 ## Desktop layout
-![Desktop layout](images/design.jpg)
+![Desktop layout](./src/assets/images/design.jpg)
 
 
 * You want to enter platzi and see the course, you can buy your subscription with my referral link and earn an additional month.😇

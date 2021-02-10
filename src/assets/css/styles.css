@@ -111,6 +111,10 @@ img {
   grid-row: 1 / -4;
 }
 
+.sidebar.active {
+  display: block;
+}
+
 .options {
   display: flex;
   flex-direction: column;
@@ -132,8 +136,6 @@ span.fas {
 }
 
 .settings {
-  position: fixed;
-  margin-top: 28vh;
   text-align: center;
   color: var(--light-color);
 }
@@ -166,15 +168,56 @@ span.fas {
   .profile__name {
     display: block;
   }
+
+  .sidebar__layout {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .options {
+    flex-direction: row;
+  }
+  .options__home,
+  .options__trending,
+  .options__likes,
+  .settings__nut {
+    margin-right: 25px;
+  }
 }
 
 @media screen and (min-width: 570px) {
+
   .main__layout {
     grid-template-columns: auto 4fr;
   }
+
+  .profile__toggle  {
+    display: none;
+  }
+
   .sidebar {
     display: block;
   }
+
+  .settings {
+    position: fixed;
+    margin-top: 28vh;
+  }
+
+  .sidebar__layout {
+    display: initial;
+  }
+
+  .options {
+    flex-direction: column;
+  }
+  .options__home,
+  .options__trending,
+  .options__likes,
+  .settings__nut {
+    margin-right: initial;
+  }
+
 }
 
 @media screen and (min-width: 720px) {
