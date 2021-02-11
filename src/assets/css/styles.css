@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
 }
 
@@ -30,7 +30,7 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 100;
 }
 
 .wrapper {
@@ -83,7 +83,7 @@ img {
   width: 40px;
   height: 40px;
   margin-right: 5px;
-  background-image: url("../images/profile.jpg");
+  background-image: url('../images/profile.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -119,6 +119,7 @@ img {
   position: fixed;
   left: 0;
   right: 0;
+  z-index: 10;
 }
 
 .sidebar.active {
@@ -171,6 +172,32 @@ span.fas {
   background-size: cover;
   border-radius: 10px;
   cursor: pointer;
+  overflow: hidden;
+}
+
+.movies__card:hover .movies__card--content {
+  transform: translateY(20px);
+}
+
+.movies__card--content {
+  background-color: var(--sidebar-color);
+  text-align: center;
+  padding: 10px;
+  color: var(--light-color);
+  transform: translateY(128px);
+  transition: transform 300ms;
+  opacity: 0.8;
+}
+
+.movies__card--content > h3 {
+  margin: 0;
+  text-shadow: 0 1px 1px var(--dark-color);
+}
+
+.movies__card--content > p {
+  padding: 10px;
+  line-height: 23px;
+  letter-spacing: 0.4px;
 }
 
 @media screen and (min-width: 480px) {
